@@ -1,6 +1,6 @@
 import './Navbar.css';
 import { useState } from 'react';
-const Navbar = ({ searchbtn }) => {
+const Navbar = ({ handleInputChange, query }) => {
     const [search, setSearch] = useState()
     return (
         <div class="main-navbar shadow-sm sticky-top">
@@ -12,8 +12,9 @@ const Navbar = ({ searchbtn }) => {
                     <div class="col-md-5 my-auto">
                         <form role="search">
                             <div class="input-group">
-                                <input type="text" placeholder="Search your product" class="form-control" />
-                                <button type="submit">
+                                <input type="text" placeholder="Search your product" onChange={handleInputChange}
+                                    value={query} class="form-control" />
+                                <button type="submit" onClick={handleInputChange} value={query}>
                                     <i class="fa fa-search"></i>
                                 </button>
                             </div>
@@ -27,11 +28,6 @@ const Navbar = ({ searchbtn }) => {
                             <li class="nav-item">
                                 <a class="nav-link" href="/search">All Products</a>
                             </li>
-                            {/* </ul>
-                    </div>
-                    <div class="col-md-5 my-auto">
-                        <ul class="nav justify-content-end"> */}
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/cart">
                                     <i class="fa fa-shopping-cart"></i> Cart (0)

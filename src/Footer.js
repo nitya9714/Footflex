@@ -1,4 +1,4 @@
-import './HomePage.css';
+import './Home/HomePage.css';
 const Footer = () => {
     return (
         <footer>

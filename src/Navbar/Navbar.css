@@ -1,12 +1,11 @@
 .main-navbar {
     border-bottom: 1px solid #ccc;
-}
-
-.main-navbar {
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
 
 .main-navbar .brand-name {
     color: rgb(20, 124, 23);

@@ -1,9 +1,10 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react';
 import './HomePage.css';
-import products from "./db/data";
-import Products2 from "./components/Products/Products2";
-import Card from "./components/Card";
+import products from "../db/data";
+import Products2 from "../Products/Products2";
+import Card from "../components/Card";
+import Navbar from '../Navbar/Navbar';
 const Home = () => {
     function filteredData(products) {
         let filteredProducts = products;
@@ -63,6 +64,7 @@ const Home = () => {
     const result2 = filteredData2(products);
     return (
         <div>
+            <Navbar />
             <main>
                 <section>
                     <h1>Welcome to FootFlex Sneaker Website</h1>

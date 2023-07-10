@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Box } from "@chakra-ui/layout";
-import Products from "../components/Products/Products";
+import Products from "../Products/Products";
 import products from "../db/data";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "../components/Card";
 import "./App2.css";
+import Navbar from "../Navbar/Navbar";
 
 function App2() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -18,7 +19,7 @@ function App2() {
   };
 
   const filteredItems = products.filter(
-    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    (product) => product.title?.toLowerCase().indexOf(query?.toLowerCase()) !== -1
   );
 
   // ----------- Radio Filtering -----------
@@ -70,6 +71,7 @@ function App2() {
 
   return (
     <>
+      <Navbar query={query} handleInputChange={handleInputChange} />
       <Box display="flex" justifyContent="centre"  >
         {<Sidebar handleChange={handleChange} />}
         {<Box w="100%">
