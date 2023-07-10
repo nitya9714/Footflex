@@ -1,0 +1,40 @@
+.main-navbar {
+    border-bottom: 1px solid #ccc;
+}
+
+.main-navbar {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-navbar .brand-name {
+    color: rgb(20, 124, 23);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-navbar .nav-link {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-navbar .dropdown-menu {
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+
+.main-navbar .navbar {
+    padding: 0px;
+    background-color: #ddd;
+}
+
+.main-navbar .navbar .nav-item .nav-link {
+    padding: 8px 20px;
+    color: #000;
+    font-size: 15px;
+}

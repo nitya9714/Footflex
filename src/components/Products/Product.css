@@ -1,0 +1,44 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    z-index: -2;
+    /* background-color: #d5ab55; */
+}
+
+.card {
+    margin: 10px;
+    border: 2px solid #ededed;
+    padding: 25px;
+    cursor: pointer;
+    width: 250px;
+    height: 400px;
+}
+
+/* .card-details {
+    border: 2px solid #ededed;
+    display: flex;
+    align-self: center;
+} */
+
+.card-img {
+    width: 13rem;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    font-size: 24px;
+}
+
+.bag-icon {
+    margin-left: 120px;
+    color: #535353;
+}
