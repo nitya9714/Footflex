@@ -1,8 +1,10 @@
 .card-container-2 {
     display: flex;
+    /* flex-wrap: nowrap; */
     /* flex-wrap: wrap; */
     margin-left: 2rem;
     z-index: -2;
+
     /* overflow-y: hidden; */
     /* overflow-x: scroll; */
     /* background-color: aqua; */
@@ -11,7 +13,7 @@
 .card {
     margin: 10px;
     border: 2px solid #ededed;
-    padding: 25px;
+    padding: 5px;
     cursor: pointer;
     width: 250px;
     height: 400px;
@@ -38,6 +40,7 @@
     justify-content: space-between;
     align-items: right;
     font-size: 24px;
+
 }
 
 .bag-icon {
